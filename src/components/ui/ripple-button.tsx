@@ -3,17 +3,17 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
 const rippleButtonVariants = cva(
-  "relative overflow-hidden transition-all duration-150 ease-in-out transform active:scale-95 font-semibold text-xs leading-4 h-9 px-3 py-2 border rounded shadow-button",
+  "relative overflow-hidden transition-all duration-200 ease-out transform active:scale-95 font-semibold text-sm leading-5 h-11 px-6 py-3 border rounded-lg shadow-button",
   {
     variants: {
       variant: {
-        login: "bg-secondary text-secondary-foreground border-white hover:bg-secondary/90",
-        register: "bg-primary text-primary-foreground border-white hover:bg-primary/90",
-        info: "bg-primary text-primary-foreground border-white hover:bg-primary/90 px-6 mt-1"
+        login: "bg-secondary text-secondary-foreground border-white/30 hover:bg-secondary/90 hover:shadow-lg",
+        register: "bg-primary text-primary-foreground border-white/30 hover:bg-primary/90 hover:shadow-lg",
+        info: "bg-primary text-primary-foreground border-white/30 hover:bg-primary/90 hover:shadow-lg px-8 mt-2"
       },
       size: {
-        default: "min-w-[134px]",
-        register: "min-w-[136px]",
+        default: "min-w-[140px]",
+        register: "min-w-[145px]",
         info: "min-w-auto"
       }
     },

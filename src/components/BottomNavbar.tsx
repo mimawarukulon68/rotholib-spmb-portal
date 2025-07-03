@@ -1,5 +1,4 @@
 import React from 'react';
-import { Home, BookOpen, FileText, ClipboardList, Phone } from 'lucide-react';
 import { useLocation, Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
@@ -7,27 +6,27 @@ const navItems = [
   {
     name: 'Beranda',
     path: '/',
-    icon: Home
+    icon: 'fas fa-home'
   },
   {
     name: 'Panduan',
     path: '/panduan',
-    icon: BookOpen
+    icon: 'fas fa-book'
   },
   {
     name: 'Formulir',
     path: '/formulir',
-    icon: FileText
+    icon: 'fas fa-file-alt'
   },
   {
     name: 'Hasil SPMB',
     path: '/hasil',
-    icon: ClipboardList
+    icon: 'fas fa-clipboard-list'
   },
   {
     name: 'Kontak',
     path: '/kontak',
-    icon: Phone
+    icon: 'fas fa-phone'
   }
 ];
 
@@ -38,7 +37,6 @@ const BottomNavbar = () => {
     <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-button z-50">
       <div className="flex items-center justify-between h-[58px] px-4 py-1.5">
         {navItems.map((item) => {
-          const Icon = item.icon;
           const isActive = location.pathname === item.path;
 
           return (
@@ -56,7 +54,10 @@ const BottomNavbar = () => {
                 "transition-colors duration-200",
                 isActive ? "text-islamic-green" : "text-muted-foreground"
               )}>
-                <Icon size={isActive ? 24 : 20} />
+                <i className={cn(
+                  item.icon,
+                  isActive ? "text-xl" : "text-lg"
+                )} />
               </div>
               <span className={cn(
                 "block text-[10px] font-semibold leading-[12.5px] transition-all duration-200",

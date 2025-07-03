@@ -22,11 +22,11 @@ const Index = () => {
         >
           <div className="flex flex-col items-center gap-4 max-w-[448px] w-full">
             {/* Logo */}
-            <div className="mb-2">
+            <div className="mb-3">
               <img 
                 src={schoolLogo} 
                 alt="Logo MI Ma'arif Roudlotut Tholibin"
-                className="h-24 w-28 object-contain"
+                className="h-24 w-24 object-cover rounded-full border-4 border-white/20 shadow-lg"
               />
             </div>
             
