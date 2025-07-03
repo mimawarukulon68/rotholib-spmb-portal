@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <div className="relative min-h-screen font-poppins text-foreground bg-white">
       {/* Hero Section */}
-      <div className="flex flex-col min-h-[583px]">
+      <div className="flex flex-col h-[calc(100dvh-58px)]">
         <div 
           className="flex-1 flex flex-col items-center justify-center px-3 py-4 relative"
           style={{
