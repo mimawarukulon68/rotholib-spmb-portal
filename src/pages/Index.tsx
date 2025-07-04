@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
+import { RippleButton } from '@/components/ui/ripple-button';
 import BottomNavbar from '@/components/BottomNavbar';
 import schoolLogo from '@/assets/school-logo.png';
 import schoolBuilding from '@/assets/school-building.png';
@@ -34,7 +34,7 @@ const Index = () => {
             <div className="flex flex-col items-center gap-2 text-center px-2">
               <div className="flex flex-col items-center gap-2">
                 <h1 className="text-white font-poppins text-5 font-medium leading-7">
-                  Selamat Datang di Testing
+                  Selamat Datang di
                 </h1>
                 <h2 className="text-white text-[36px] font-bold leading-[45px]">
                   Portal SPMB
@@ -54,12 +54,12 @@ const Index = () => {
             
             {/* Action Buttons */}
             <div className="flex gap-8 mt-2">
-              <Button className="bg-secondary text-secondary-foreground border-white/30 hover:bg-secondary/90 hover:shadow-lg font-semibold text-sm leading-5 h-11 px-6 py-3 border rounded-lg shadow-button min-w-[140px]">
+              <RippleButton variant="login" size="default">
                 Login SPMB
-              </Button>
-              <Button className="bg-primary text-primary-foreground border-white/30 hover:bg-primary/90 hover:shadow-lg font-semibold text-sm leading-5 h-11 px-6 py-3 border rounded-lg shadow-button min-w-[145px]">
+              </RippleButton>
+              <RippleButton variant="register" size="register">
                 Daftar Sekarang
-              </Button>
+              </RippleButton>
             </div>
           </div>
         </div>
@@ -73,9 +73,9 @@ const Index = () => {
                 SPMB MI Roudlotut Tholibin Warukulon<br />
                 TP 2025/2026
               </p>
-              <Button className="bg-primary text-primary-foreground border-white/30 hover:bg-primary/90 hover:shadow-lg px-8 mt-2 font-semibold text-sm leading-5 h-11 py-3 border rounded-lg shadow-button">
+              <RippleButton variant="info" size="info">
                 Baca Selengkapnya
-              </Button>
+              </RippleButton>
             </div>
           </div>
         </div>
