@@ -34,7 +34,7 @@ const Index = () => {
             <div className="flex flex-col items-center gap-2 text-center px-2">
               <div className="flex flex-col items-center gap-2">
                 <h1 className="text-white font-poppins text-5 font-medium leading-7">
-                  Selamat Datang di
+                  Selamat Datang di Testing
                 </h1>
                 <h2 className="text-white text-[36px] font-bold leading-[45px]">
                   Portal SPMB
