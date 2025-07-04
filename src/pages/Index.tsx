@@ -66,7 +66,7 @@ const Index = () => {
         
         {/* Information Section */}
         <div className="px-3 py-4">
-          <div className="bg-white rounded-md shadow-card max-w-[448px] w-full mx-auto p-3 border border-primary/40">
+          <div className="bg-white rounded-xl shadow-card max-w-[448px] w-full mx-auto p-3 border border-primary/40">
             <div className="flex flex-col items-center text-center gap-1.5">
               <p className="text-muted-foreground text-sm italic font-medium">
                 Panduan & Informasi selengkapnya seputar<br />

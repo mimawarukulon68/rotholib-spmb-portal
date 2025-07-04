@@ -43,7 +43,11 @@ const Formulir = () => {
                 </div>
                 <div>
                   <Label htmlFor="tanggal-lahir">Tanggal Lahir *</Label>
-                  <Input id="tanggal-lahir" type="date" placeholder="MM/DD/YYYY" />
+                  <Input 
+                    id="tanggal-lahir" 
+                    type="date" 
+                    className="uppercase placeholder:uppercase"
+                  />
                 </div>
               </div>
               <div>
