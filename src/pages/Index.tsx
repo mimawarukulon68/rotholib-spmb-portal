@@ -2,7 +2,7 @@ import React from 'react';
 import { RippleButton } from '@/components/ui/ripple-button';
 import BottomNavbar from '@/components/BottomNavbar';
 import schoolLogo from '@/assets/school-logo.png';
-import heroBackground from '@/assets/hero-background.jpg';
+import schoolBuilding from '@/assets/school-building.png';
 
 const Index = () => {
   return (
@@ -12,7 +12,7 @@ const Index = () => {
         <div 
           className="flex-1 flex flex-col items-center justify-center px-3 py-4 relative"
           style={{
-            background: `var(--hero-bg), url(${heroBackground})`,
+            background: `var(--hero-bg), url(${schoolBuilding})`,
             backgroundSize: 'auto, cover',
             backgroundPosition: '0% 0%, 50% 50%',
             backgroundRepeat: 'repeat, no-repeat',
@@ -66,16 +66,12 @@ const Index = () => {
         
         {/* Information Section */}
         <div className="px-3 py-4">
-          <div className="bg-white rounded-md shadow-card max-w-[448px] w-full mx-auto p-3">
+          <div className="bg-white rounded-md shadow-card max-w-[448px] w-full mx-auto p-3 border border-primary/40">
             <div className="flex flex-col items-center text-center gap-1.5">
-              <h3 className="text-black font-bold">
-                Panduan & Informasi
-              </h3>
-              <div className="bg-black h-px w-16"></div>
-              <p className="text-muted-foreground text-sm italic font-medium leading-[22.75px]">
-                <span>Panduan & Informasi selengkapnya terkait SPMB MI Roudlotut Tholibin Warukulon </span>
-                <br />
-                <span>TP 2025/2026</span>
+              <p className="text-muted-foreground text-sm italic font-medium">
+                Panduan & Informasi selengkapnya seputar<br />
+                SPMB MI Roudlotut Tholibin Warukulon<br />
+                TP 2025/2026
               </p>
               <RippleButton variant="info" size="info">
                 Baca Selengkapnya

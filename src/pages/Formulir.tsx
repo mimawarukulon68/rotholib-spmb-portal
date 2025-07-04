@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 
 const Formulir = () => {
   return (
@@ -42,20 +43,21 @@ const Formulir = () => {
                 </div>
                 <div>
                   <Label htmlFor="tanggal-lahir">Tanggal Lahir *</Label>
-                  <Input id="tanggal-lahir" type="date" />
+                  <Input id="tanggal-lahir" type="date" placeholder="MM/DD/YYYY" />
                 </div>
               </div>
               <div>
-                <Label htmlFor="jenis-kelamin">Jenis Kelamin *</Label>
-                <Select>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Pilih jenis kelamin" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="L">Laki-laki</SelectItem>
-                    <SelectItem value="P">Perempuan</SelectItem>
-                  </SelectContent>
-                </Select>
+                <Label>Jenis Kelamin *</Label>
+                <RadioGroup defaultValue="" className="flex flex-row gap-6 mt-2">
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="L" id="laki-laki" />
+                    <Label htmlFor="laki-laki">Laki-laki</Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="P" id="perempuan" />
+                    <Label htmlFor="perempuan">Perempuan</Label>
+                  </div>
+                </RadioGroup>
               </div>
               <div>
                 <Label htmlFor="agama">Agama *</Label>
