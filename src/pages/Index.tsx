@@ -1,5 +1,5 @@
 import React from 'react';
-import { RippleButton } from '@/components/ui/ripple-button';
+import { Button } from '@/components/ui/button';
 import BottomNavbar from '@/components/BottomNavbar';
 import schoolLogo from '@/assets/school-logo.png';
 import schoolBuilding from '@/assets/school-building.png';
@@ -54,12 +54,12 @@ const Index = () => {
             
             {/* Action Buttons */}
             <div className="flex gap-8 mt-2">
-              <RippleButton variant="login" size="default">
+              <Button className="bg-secondary text-secondary-foreground border-white/30 hover:bg-secondary/90 hover:shadow-lg font-semibold text-sm leading-5 h-11 px-6 py-3 border rounded-lg shadow-button min-w-[140px]">
                 Login SPMB
-              </RippleButton>
-              <RippleButton variant="register" size="register">
+              </Button>
+              <Button className="bg-primary text-primary-foreground border-white/30 hover:bg-primary/90 hover:shadow-lg font-semibold text-sm leading-5 h-11 px-6 py-3 border rounded-lg shadow-button min-w-[145px]">
                 Daftar Sekarang
-              </RippleButton>
+              </Button>
             </div>
           </div>
         </div>
@@ -73,9 +73,9 @@ const Index = () => {
                 SPMB MI Roudlotut Tholibin Warukulon<br />
                 TP 2025/2026
               </p>
-              <RippleButton variant="info" size="info">
+              <Button className="bg-primary text-primary-foreground border-white/30 hover:bg-primary/90 hover:shadow-lg px-8 mt-2 font-semibold text-sm leading-5 h-11 py-3 border rounded-lg shadow-button">
                 Baca Selengkapnya
-              </RippleButton>
+              </Button>
             </div>
           </div>
         </div>
