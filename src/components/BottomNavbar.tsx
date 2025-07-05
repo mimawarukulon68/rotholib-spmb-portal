@@ -35,7 +35,7 @@ const BottomNavbar = () => {
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-button z-50">
-      <div className="flex items-center justify-between h-[58px] px-4 py-1.5">
+      <div className="flex items-center justify-around h-[58px] px-4 py-1.5">
         {navItems.map((item) => {
           const isActive = location.pathname === item.path;
 
@@ -60,9 +60,9 @@ const BottomNavbar = () => {
                 )} />
               </div>
               <span className={cn(
-                "block text-[10px] font-semibold leading-[12.5px] transition-all duration-200",
+                "block text-[10px] font-semibold leading-[12.5px] transition-all duration-200 whitespace-nowrap",
                 isActive 
-                  ? "text-transparent bg-gradient-to-r from-islamic-green to-primary-light bg-clip-text" 
+                  ? "text-islamic-green" 
                   : "text-muted-foreground"
               )}>
                 {item.name}
