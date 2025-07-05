@@ -56,7 +56,7 @@ const BottomNavbar = () => {
               )}>
                 <i className={cn(
                   item.icon,
-                  isActive ? "text-xl" : "text-lg"
+                  "text-lg"
                 )} />
               </div>
               <span className={cn(
